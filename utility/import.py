@@ -22,4 +22,7 @@ def get_one_recipe(path: str, recipe_name: str) -> Recipe:
 if __name__ == '__main__':
     recipe_list: list[str] = get_recipes_list("." + recipes_path)
     for i, x in enumerate(recipe_list):
-        print(i, str(get_one_recipe("." + recipes_path, x)))
+        try:
+            print(i, str(get_one_recipe("." + recipes_path, x)))
+        except ValueError:
+            print(i)

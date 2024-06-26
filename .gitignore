@@ -163,7 +163,3 @@ cython_debug/
 
 # Exclude all contents of the data directory
 data/*
-
-# But keep the data directory itself
-!data/
-!data/.gitignore

@@ -5,8 +5,6 @@ from recipes import Recipe
 
 recipes_path: str = "./data/recipes/"
 
-banned_recipes: list[str] = ["minecraft:crafting_special_armordye"]
-
 
 def get_recipes_list(path: str) -> list[str]:
     return os.listdir(path)

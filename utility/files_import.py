@@ -1,4 +1,3 @@
-FILE_PATH: str = "../material_list_2024-07-22_23.28.34.txt"
 
 
 def read_material_list(file_path: str) -> list[str]:

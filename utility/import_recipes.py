@@ -3,8 +3,6 @@ import os
 
 from recipes import Recipe
 
-recipes_path: str = "./data/recipes/"
-
 
 def get_recipes_list(path: str) -> list[str]:
     return os.listdir(path)
@@ -26,6 +24,7 @@ def get_all_recipes(path: str) -> list[Recipe]:
 
 
 if __name__ == '__main__':
-    recipe_list: list[str] = get_recipes_list("." + recipes_path)
-    for _recipe in get_all_recipes("." + recipes_path):
+    recipes_path: str = "../data/recipes/"
+    recipe_list: list[str] = get_recipes_list(recipes_path)
+    for _recipe in get_all_recipes(recipes_path):
         print(_recipe)
